@@ -2,8 +2,7 @@ import { defineConfig, devices } from '@playwright/test';
 import dotenv from 'dotenv';
 
 /**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
+ * Reads environment variables from .env file and saves them as global process.env
  */
 dotenv.config();
 
