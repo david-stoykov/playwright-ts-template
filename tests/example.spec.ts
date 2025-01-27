@@ -1,18 +1,13 @@
-import { test, expect } from '@playwright/test';
+import { expect, test } from "utils/fixtures";
 
-test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+test.describe('Playwright docs tests', {tag: '@regression'}, () => {
 
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
+test.beforeEach(async ({ homepage }) => {
+  await homepage.goto();
 });
 
-test('get started link', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
-
-  // Click the get started link.
-  await page.getByRole('link', { name: 'Get started' }).click();
-
-  // Expects page to have a heading with the name of Installation.
-  await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
+test('Search for Best Practices and open the page', async ({ page, homepage }) => {
+  await homepage.searchForDocumentation('Best Practise')
+  await expect(page.getByRole('link', { name: 'Best Practices', exact: true })).toBeVisible();
+});
 });
