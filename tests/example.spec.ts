@@ -5,7 +5,7 @@ test.describe('Playwright docs tests', { tag: '@regression' }, () => {
 		await homepage.goto();
 	});
 
-	test('Search for Best Practices and open the page', async ({
+	test('Search for Best Practices and verify result', async ({
 		page,
 		homepage,
 	}) => {
