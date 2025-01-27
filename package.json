@@ -10,9 +10,9 @@
     ]
   },
   "scripts": {
-    "prepare": "husky",
     "lint": "eslint . --ext .ts",
-    "lint:fix": "eslint . --ext .ts --fix"
+    "lint:fix": "eslint . --ext .ts --fix",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
