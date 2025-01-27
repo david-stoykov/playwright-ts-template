@@ -1,36 +1,36 @@
 {
-  "name": "playwright-ts-template",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": [
-      "npx prettier --write",
-      "npx eslint --fix"
-    ]
-  },
-  "scripts": {
-    "lint": "eslint . --ext .ts",
-    "lint:fix": "eslint . --ext .ts --fix",
-    "prepare": "husky"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@playwright/test": "^1.50.0",
-    "@types/node": "^22.10.10",
-    "@typescript-eslint/eslint-plugin": "^8.22.0",
-    "@typescript-eslint/parser": "^8.22.0",
-    "eslint": "^9.19.0",
-    "eslint-config-prettier": "^10.0.1",
-    "eslint-plugin-no-only-tests": "^3.3.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^15.4.3",
-    "prettier": "3.3.3",
-    "typescript": "5.6.3"
-  },
-  "dependencies": {
-    "dotenv": "^16.4.7"
-  }
+	"name": "playwright-ts-template",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"lint-staged": {
+		"**/*.{js,jsx,ts,tsx}": [
+			"npx prettier --write",
+			"npx eslint --fix"
+		]
+	},
+	"scripts": {
+		"lint": "eslint . --ext .ts",
+		"lint:fix": "eslint . --ext .ts --fix",
+		"prepare": "husky"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@playwright/test": "^1.50.0",
+		"@types/node": "^22.10.10",
+		"@typescript-eslint/eslint-plugin": "^8.22.0",
+		"@typescript-eslint/parser": "^8.22.0",
+		"eslint": "^9.19.0",
+		"eslint-config-prettier": "^10.0.1",
+		"eslint-plugin-no-only-tests": "^3.3.0",
+		"husky": "^9.1.7",
+		"lint-staged": "^15.4.3",
+		"prettier": "3.3.3",
+		"typescript": "5.6.3"
+	},
+	"dependencies": {
+		"dotenv": "^16.4.7"
+	}
 }

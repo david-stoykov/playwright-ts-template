@@ -5,13 +5,8 @@ test.describe('Playwright docs tests', { tag: '@regression' }, () => {
 		await homepage.goto();
 	});
 
-	test('Search for Best Practices and verify results', async ({
-		page,
-		homepage,
-	}) => {
+	test('Search for Best Practices and verify results', async ({ page, homepage }) => {
 		await homepage.searchForDocumentation('Best Practise');
-		await expect(
-			page.getByRole('link', { name: 'Best Practices', exact: true }),
-		).toBeVisible();
+		await expect(page.getByRole('link', { name: 'Best Practices', exact: true })).toBeVisible();
 	});
 });
